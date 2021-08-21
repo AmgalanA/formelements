@@ -1,0 +1,104 @@
+@import "../style.scss";
+@import "../second_column/style.scss";
+
+.footer {
+    margin:40px 140px 0px 140px;
+    max-width:100%;
+    display:flex;
+    .description_containers {
+        width:280px / 1440px * 100%;
+        
+        .description_container {
+            width:100%;
+            display:flex;
+            padding-bottom:17px;
+            border-bottom:1px solid rgba(31, 32, 65, 0.1);
+    
+            .description__text {
+                display:flex;
+                flex-direction:column;
+                margin-left:10px;
+                width:100%;
+    
+                label {
+                    text-transform:none;
+                }
+                span {
+                    @include fontstyles(14px, 24px, 400);
+                    color:#1F2041;
+                }
+            }
+        }
+    }
+    
+
+    .comment_container {
+        display:flex;
+        margin-left: 150px;
+
+        .comment__description {
+            margin-left:5px;
+            .comment__title {
+                display:flex;
+                flex-direction:column;
+                label {
+                    @include fontstyles(14px, 24px, 700);
+                    color: rgba(31, 32, 65, 0.75);
+                }
+                span {
+                    @include fontstyles(14px, 24px, 400);
+                    color:#1F2041;
+                }
+            }
+            .comment__text {
+                @include fontstyles(14px, 24px, 400);
+                color: rgba(31, 32, 65, 0.75);
+            }
+            .like_button {
+                margin:-30px 0px 0px 24px;
+                position:relative;
+                .like__input {
+                    appearance:none;
+                    position:absolute;
+                }
+                .like__label {
+                    cursor:pointer;
+                    font-size:0px;
+                    &::after {
+                        content:"12";
+                        padding:3px 0px 0px 20px;
+                        @include fontstyles(10px, 12px, 400);
+                        display:block;
+                        width: 40px;
+                        height: 20px;
+
+                        background: #FFFFFF;
+                        border: 1px solid #BC9CFF;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+
+                        position:absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+
+                    &::before {
+                        content:"";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+        
+                        background:url(../../images/favorite.svg) no-repeat;
+                        background-size:12px 12px;
+        
+                        position:absolute;
+                        top: 4px;
+                        left: 3px; 
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+}

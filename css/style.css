@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.wrapper .column._texts .text_field_container .email_container input, .wrapper .column._texts .text_field_container .email_container, .wrapper .column._texts .dropdown_container, .wrapper .column._texts .texts__input {
+  background: #FFFFFF;
+  /* Dark 25% */
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 15px 10px 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body img, body select {
+  cursor: pointer;
+}
+body label {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+.wrapper .column {
+  float: left;
+  width: 22.2222222222%;
+  margin: 10px 120px 10px 20px;
+}
+.wrapper .column form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.wrapper .column._texts label {
+  margin-bottom: 5px;
+}
+.wrapper .column._texts .label_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.wrapper .column._texts .label_container .label__second {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 0px 0px 3px auto;
+}
+.wrapper .column._texts .texts__input {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.wrapper .column._texts .texts__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.wrapper .column._texts .texts__input._default:hover {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.wrapper .column._texts .dropdown_container {
+  width: 100%;
+  /* Переопредляем padding */
+  padding: 20px 0 20px 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+}
+.wrapper .column._texts .dropdown_container._filter {
+  width: 90%;
+}
+.wrapper .column._texts .dropdown_container._extended {
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.wrapper .column._texts .dropdown_container._extended select {
+  border: none;
+}
+.wrapper .column._texts .dropdown_container select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.wrapper .column._texts .dropdown_container img {
+  position: absolute;
+  bottom: 16px;
+  right: 7px;
+}
+.wrapper .column._texts .date_dropdown_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.wrapper .column._texts .date_dropdown_container .dropdown__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 47%;
+  margin: 0 auto 0 0;
+}
+.wrapper .column._texts .date_dropdown_container .dropdown__column:nth-child(2) {
+  margin: 0 0 0 auto;
+}
+.wrapper .column._texts .date_dropdown_container .dropdown_container {
+  width: 100%;
+  float: left;
+}
+.wrapper .column._texts .dropdown__rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  padding: 10px;
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-top: 0px;
+}
+.wrapper .column._texts .dropdown__rooms label {
+  margin: auto 0;
+}
+.wrapper .column._texts .dropdown__rooms .dropdown__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .column._texts .dropdown__rooms .dropdown__room .room__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.wrapper .column._texts .dropdown__rooms .dropdown__room .room__numbers label {
+  margin: auto 10px;
+}
+.wrapper .column._texts .dropdown__rooms .dropdown__room .room__numbers .room__minus, .wrapper .column._texts .dropdown__rooms .dropdown__room .room__numbers .room__plus {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+}
+.wrapper .column._texts .dropdown__rooms .dropdown__room .room__numbers .room__plus {
+  padding-top: 1.5px;
+}
+.wrapper .column._texts .text_field_container {
+  width: 90%;
+}
+.wrapper .column._texts .text_field_container .email_container {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.wrapper .column._texts .text_field_container .email_container input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wrapper .column._texts .text_field_container .email_container img {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+.wrapper .column .checkbox_list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.wrapper .column .checkbox_list:nth-child(2n+1) {
+  margin-top: 40px;
+}
+.wrapper .column .checkbox_list img {
+  margin: auto 0px auto auto;
+}
+.wrapper .column .checkbox_list label {
+  margin: auto auto auto 0px;
+}
